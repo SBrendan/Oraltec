@@ -37,7 +37,7 @@ const Page404 = () => {
 
       <Box marginY={4}>
         <Heading textAlign="center" size="lg">
-          Cette page n'existe pas.
+          Cette page n&aposexiste pas.
         </Heading>
 
         <Box textAlign="center" marginTop={4}>
