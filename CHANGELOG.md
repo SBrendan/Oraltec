@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/SBrendan/Oraltec/compare/v0.1.3...v0.1.4) (2023-12-06)
+
+
+### Features
+
+* **components:** enable PWA + update package.json + add metadata base ([6f2ab62](https://github.com/SBrendan/Oraltec/commit/6f2ab62e168e19984c87fe4b79d7b9a97567cbfb))
+
 ### [0.1.3](https://github.com/SBrendan/Oraltec/compare/v0.1.2...v0.1.3) (2023-12-06)
 
 
