@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/SBrendan/Oraltec/compare/v0.1.5...v0.1.6) (2023-12-06)
+
+
+### Features
+
+* **pages:** add favicon ([d38a2b4](https://github.com/SBrendan/Oraltec/commit/d38a2b4967ad6e93081cff93e8d263ca6043eb16))
+
 ### [0.1.5](https://github.com/SBrendan/Oraltec/compare/v0.1.4...v0.1.5) (2023-12-06)
 
 
