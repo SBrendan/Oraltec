@@ -6,12 +6,15 @@ import Hardware from '~/lib/components/Hardware';
 import Services from '~/lib/components/Services';
 import Team from '~/lib/components/Team';
 import WhoWeAre from '~/lib/components/WhoWeAre';
+import Footer from '~/lib/layout/Footer';
+import Header from '~/lib/layout/Header';
 import IconCards from '~/lib/layout/IconCards';
 import SectionLayout from '~/lib/layout/SectionLayout';
 
 const Home = () => {
   return (
     <Box>
+      <Header />
       <Hero />
       <IconCards />
       <SectionLayout
@@ -47,6 +50,7 @@ const Home = () => {
         id="contact"
         mainTitle
       />
+      <Footer />
     </Box>
   );
 };

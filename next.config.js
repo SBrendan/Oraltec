@@ -12,10 +12,29 @@ const withPWA = require('next-pwa')({
 module.exports = withPWA({
   env: {
     MAP_BOX_API: process.env.MAP_BOX_API,
+    NEXT_PUBLIC_SHOW_MAINTENANCE: process.env.NEXT_PUBLIC_SHOW_MAINTENANCE,
   },
   swcMinify: true,
   reactStrictMode: true,
   eslint: {
     dirs: ['src'],
+  },
+
+  redirects() {
+    return process.env.NEXT_PUBLIC_SHOW_MAINTENANCE === '1'
+      ? [
+          {
+            source: '/((?!maintenance).*)',
+            destination: '/maintenance/',
+            permanent: false,
+          },
+        ]
+      : [
+          {
+            source: '/maintenance',
+            destination: '/',
+            permanent: false,
+          },
+        ];
   },
 });

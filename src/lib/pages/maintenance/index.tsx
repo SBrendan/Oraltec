@@ -1,18 +1,10 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Image,
-  Link as ChakraLink,
-  Text,
-} from '@chakra-ui/react';
-import Link from 'next/link';
+import { Box, Flex, Heading, Link, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 
-import NotFound from '../../../../public/404 Error-pana.svg';
+import underConstruction from '../../../../public/Under construction-amico.svg';
 import MotionBox from '~/lib/components/motion/Box';
 
-const Page404 = () => {
+const Maintenance = () => {
   return (
     <Flex minHeight="70vh" direction="column" justifyContent="center">
       <MotionBox
@@ -20,35 +12,36 @@ const Page404 = () => {
         transition={{ repeat: Infinity, duration: 2, repeatType: 'reverse' }}
         width={{ base: '100%', sm: '70%', md: '60%' }}
         margin="0 auto"
+        display="flex"
+        justifyContent="center"
       >
-        <Image src={NotFound} alt="Error 404 not found Illustration" />
+        <Image src={underConstruction} alt="Error 404 not found Illustration" />
       </MotionBox>
       <Text textAlign="center" fontSize="xs" color="gray">
-        <ChakraLink
+        <Link
           href="https://stories.freepik.com/web"
           isExternal
           rel="noopener noreferrer"
         >
           Illustration par Freepik Stories
-        </ChakraLink>
+        </Link>
       </Text>
 
       <Box marginY={4}>
         <Heading textAlign="center" size="lg">
-          Page non trouvée.
+          Construction en Cours
         </Heading>
 
         <Box textAlign="center" marginTop={4}>
-          <Text fontSize="sm" color="gray">
-            C&apos;est bon !
+          <Text variant="body1" textAlign="center" mt={2}>
+            Nous nous excusons pour la gêne occasionnée. Le site web est
+            actuellement en cours de maintenance. Nous vous invitons à le
+            consulter ultérieurement.
           </Text>
-          <Button as={Link} href="/" size="sm">
-            Revenons en arrière
-          </Button>
         </Box>
       </Box>
     </Flex>
   );
 };
 
-export default Page404;
+export default Maintenance;

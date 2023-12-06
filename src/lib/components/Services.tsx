@@ -299,8 +299,8 @@ const Services: React.FC = () => {
         <GenerateCard
           services={servicesDetails}
           isOpen={isOpen}
-          handleClose={() => handleClose}
-          handleOpen={() => handleOpen}
+          handleClose={handleClose}
+          handleOpen={handleOpen}
           serviceActive={serviceDetails}
         />
       </Grid>

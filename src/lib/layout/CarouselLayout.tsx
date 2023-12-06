@@ -38,7 +38,12 @@ const CarouselLayout: React.FC<Props> = (props: Props) => {
       <Flex w="full" overflow="hidden" pos="relative">
         <Flex h="400px" w="full" {...carouselStyle}>
           {imagesUrls.map((img, sid) => (
-            <Box key={`slide-${img}`} boxSize="full" shadow="md" flex="none">
+            <Box
+              key={`slide-${img}-${sid + 1}`}
+              boxSize="full"
+              shadow="md"
+              flex="none"
+            >
               <Text
                 color="white"
                 fontSize="xs"

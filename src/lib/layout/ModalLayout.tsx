@@ -25,7 +25,11 @@ const ModalLayout: React.FC<Props> = (props: Props) => {
 
   return (
     <Stack textAlign="center">
-      <DividerWithText title={serviceDetails.title} containerSize="5xl" />
+      <DividerWithText
+        title={serviceDetails.title}
+        mainTitle
+        containerSize="5xl"
+      />
       <SimpleGrid columns={{ base: 1, md: 2 }} gap={20}>
         <Box>
           <CarouselLayout imagesUrls={serviceDetails.imagesUrls} />
