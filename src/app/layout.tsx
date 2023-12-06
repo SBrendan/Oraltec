@@ -51,6 +51,7 @@ export const metadata: Metadata = {
     emails: 'contact@oraltec.fr',
     countryName: 'France',
   },
+  metadataBase: new URL('https://oraltec.fr'),
 };
 
 export const viewport: Viewport = {
