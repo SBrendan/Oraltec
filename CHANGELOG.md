@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/SBrendan/Oraltec/compare/v0.1.10...v0.1.11) (2023-12-08)
+
+
+### Bug Fixes
+
+* **pages:** reactivate maintenance page trigger ([24963e2](https://github.com/SBrendan/Oraltec/commit/24963e2ba9bb8a7f6767092b8b5b521bb8693b3a))
+
 ### [0.1.10](https://github.com/SBrendan/Oraltec/compare/v0.1.9...v0.1.10) (2023-12-08)
 
 
