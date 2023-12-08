@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
                   Adresse
                 </Text>
                 <Text color="#74787b" fontSize="0.875rem">
-                  1 Rue d&aposAnjou <br /> 35140 SAINT-AUBIN-DU-CORMIER
+                  1 Rue d&apos;Anjou <br /> 35140 SAINT-AUBIN-DU-CORMIER
                 </Text>
               </Box>
             </ListItem>

@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { Suspense } from 'react';
 
 import Providers from '~/app/providers';
 import Footer from '~/lib/components/Footer';
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   classification: 'Santé',
   openGraph: {
     title: APP_NAME,
-    description: `Découvrez les services dentaires complets d'Oraltec : prothèses sur mesure, barres implantaires, gouttières de blanchiment, réparations personnalisées, et plus encore. Qualité, précision et innovation font d'Oraltec le partenaire idéal pour vos besoins dentaires.`,
+    description: `Découvrez les services dentaires complets d&apos;Oraltec : prothèses sur mesure, barres implantaires, gouttières de blanchiment, réparations personnalisées, et plus encore. Qualité, précision et innovation font d'Oraltec le partenaire idéal pour vos besoins dentaires.`,
     images:
       'https://images.unsplash.com/photo-1621516799962-7dad52802428?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     url: 'https://oraltec.fr',
@@ -101,7 +102,9 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       <body>
         <Providers>
           <Header />
-          <Layout>{children}</Layout>
+          <Suspense fallback={<p>Chargement...</p>}>
+            <Layout>{children}</Layout>
+          </Suspense>
           <Footer />
         </Providers>
       </body>
