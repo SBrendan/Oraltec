@@ -19,22 +19,4 @@ module.exports = withPWA({
   eslint: {
     dirs: ['src'],
   },
-
-  redirects() {
-    return process.env.NEXT_PUBLIC_SHOW_MAINTENANCE === '1'
-      ? [
-          {
-            source: '/((?!maintenance).*)',
-            destination: '/maintenance/',
-            permanent: false,
-          },
-        ]
-      : [
-          {
-            source: '/maintenance',
-            destination: '/',
-            permanent: false,
-          },
-        ];
-  },
 });

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 
 import Providers from '~/app/providers';
+import Footer from '~/lib/components/Footer';
+import Header from '~/lib/components/Header';
 import Layout from '~/lib/layout';
 
 type RootLayoutProps = {
@@ -14,7 +16,7 @@ export const metadata: Metadata = {
     default: APP_NAME,
     template: '%s | Laboratoire prothése dentaire adjointe',
   },
-  description: `Découvrez l'étendue des services dentaires proposés par Oraltec, allant des prothèses dentaires sur mesure aux solutions avancées telles que les barres implantaires, les gouttières de blanchiment, les réparations personnalisées, et bien plus encore. Notre engagement envers la qualité, la précision et l'innovation fait d'Oraltec le partenaire idéal pour répondre à tous les besoins dentaires de votre pratique.`,
+  description: `Découvrez les services dentaires complets d'Oraltec : prothèses sur mesure, barres implantaires, gouttières de blanchiment, réparations personnalisées, et plus encore. Qualité, précision et innovation font d'Oraltec le partenaire idéal pour vos besoins dentaires.`,
   applicationName: APP_NAME,
   appleWebApp: {
     capable: true,
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
   classification: 'Santé',
   openGraph: {
     title: APP_NAME,
-    description: `Découvrez l'étendue des services dentaires proposés par Oraltec, allant des prothèses dentaires sur mesure aux solutions avancées telles que les barres implantaires, les gouttières de blanchiment, les réparations personnalisées, et bien plus encore. Notre engagement envers la qualité, la précision et l'innovation fait d'Oraltec le partenaire idéal pour répondre à tous les besoins dentaires de votre pratique.`,
+    description: `Découvrez les services dentaires complets d'Oraltec : prothèses sur mesure, barres implantaires, gouttières de blanchiment, réparations personnalisées, et plus encore. Qualité, précision et innovation font d'Oraltec le partenaire idéal pour vos besoins dentaires.`,
     images:
       'https://images.unsplash.com/photo-1621516799962-7dad52802428?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     url: 'https://oraltec.fr',
@@ -60,7 +62,13 @@ export const metadata: Metadata = {
       url: '/favicon-32x32.png',
     },
     {
+      rel: 'shortcut icon',
+      type: 'image/x-icon',
+      url: '/favicon.ico',
+    },
+    {
       rel: 'icon',
+      type: 'image/x-icon',
       url: '/favicon.ico',
     },
     {
@@ -92,7 +100,9 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     <html lang="fr">
       <body>
         <Providers>
+          <Header />
           <Layout>{children}</Layout>
+          <Footer />
         </Providers>
       </body>
     </html>

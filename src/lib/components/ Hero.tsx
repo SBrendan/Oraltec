@@ -18,6 +18,7 @@ const Hero = () => {
             fontWeight="bold"
             textAlign="center"
             maxW="600px"
+            as="h1"
           >
             Laboratoire Oraltec spécialisé en{' '}
             <chakra.span

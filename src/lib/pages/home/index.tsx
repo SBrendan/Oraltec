@@ -3,18 +3,15 @@ import { Box } from '@chakra-ui/react';
 import Hero from '~/lib/components/ Hero';
 import Contact from '~/lib/components/Contact';
 import Hardware from '~/lib/components/Hardware';
+import IconCards from '~/lib/components/IconCards';
 import Services from '~/lib/components/Services';
 import Team from '~/lib/components/Team';
 import WhoWeAre from '~/lib/components/WhoWeAre';
-import Footer from '~/lib/layout/Footer';
-import Header from '~/lib/layout/Header';
-import IconCards from '~/lib/layout/IconCards';
 import SectionLayout from '~/lib/layout/SectionLayout';
 
 const Home = () => {
   return (
-    <Box>
-      <Header />
+    <Box as="main">
       <Hero />
       <IconCards />
       <SectionLayout
@@ -50,7 +47,6 @@ const Home = () => {
         id="contact"
         mainTitle
       />
-      <Footer />
     </Box>
   );
 };

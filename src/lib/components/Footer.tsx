@@ -2,7 +2,7 @@ import { Box, Text } from '@chakra-ui/react';
 
 const Footer = () => {
   return (
-    <Box textAlign="center">
+    <Box as="footer" textAlign="center">
       <Text fontSize="1rem">
         {`${new Date().getFullYear() - 1}-${new Date().getFullYear()}`} ©
         Laboratoire Oraltec - Tous droits réservés

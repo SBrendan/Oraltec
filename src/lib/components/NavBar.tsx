@@ -52,6 +52,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Box
             as="a"
+            title={navItem.label}
             p={2}
             pb={3.5}
             href={navItem.href ?? '#'}
@@ -84,6 +85,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         as="a"
         href={href ?? '#'}
         justifyContent="space-between"
+        title={label}
         alignItems="center"
         _hover={{
           textDecoration: 'none',
